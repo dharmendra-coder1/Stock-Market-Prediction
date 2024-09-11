@@ -1,0 +1,9 @@
+Flask
+Gunicorn
+numpy
+pandas
+datetime
+matplotlib
+Scikit-learn
+keras
+yfinance
