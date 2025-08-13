@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ symbol }} Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            margin: auto;
+            width: 85%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px #ccc;
+        }
+        .info {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        a.button:hover {
+            background-color: #1f618d;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ symbol }} Stock Forecast</h1>
+    <div class="box">
+        <div class="info"><strong>Today ({{ today_date }}):</strong> ${{ today_price }}</div>
+        <div class="info"><strong>Predicted Price ({{ tomorrow_date }}):</strong> ${{ tomorrow_price }}</div>
+        <div class="info"><strong>Prediction Accuracy:</strong> {{ accuracy }}%</div>
+
+        <h2>Interactive Forecast Chart</h2>
+        <iframe src="{{ url_for('static', filename=chart_file) }}"></iframe>
+
+        <a class="button" href="{{ url_for('static', filename=csv_file) }}" download>Download Forecast CSV</a>
+        <a class="button" href="{{ url_for('index') }}">Predict Another</a>
+    </div>
+</body>
+</html>
