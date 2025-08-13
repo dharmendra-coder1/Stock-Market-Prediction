@@ -1,0 +1,12 @@
+Flask==3.0.3
+gunicorn==21.2.0
+
+yfinance==0.2.43
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+
+tensorflow==2.15.0
+keras==2.15.0
+
+plotly==5.22.0
