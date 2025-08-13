@@ -2,7 +2,7 @@
 **Predict next trading day’s close price using an LSTM model.**  
 **Outputs**: interactive chart (HTML) + today/predicted CSV.
 
-🔗 **View Project** (https://drive.google.com/file/d/1_RlTxRA1_32yvMaFLcpnLk4idh0l7MiY/view?usp=sharing)
+🔗 **[View Project]**(https://drive.google.com/file/d/1_RlTxRA1_32yvMaFLcpnLk4idh0l7MiY/view?usp=sharing)
 
 ## What it does
 - Downloads stock data from Yahoo Finance
